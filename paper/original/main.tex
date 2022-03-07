@@ -1,0 +1,109 @@
+%\documentclass[a4paper,pdf]{article} % gebruik acm style voor je scriptie: [format=acmsmall, screen=true, review=false]{acmart} 
+%### ACM template on overleaf
+
+%* You can find the ACM template also on overleaf. You can then use the points below for the content.
+%* <https://www.overleaf.com/latex/templates/acm-conference-proceedings-master-template/pnrfvrrdbfw>
+
+
+\documentclass[sigconf]{acmart} 
+% \settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+% \pagestyle{plain} % removes running headers
+%\documentclass[sigconf,format=acmsmall, screen=true, review=false]{acmart} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{pdfpages} % http://mirror.unl.edu/ctan/macros/latex/contrib/pdfpages/pdfpages.pdf
+\usepackage{booktabs} 
+% \usepackage[hyphens]{url}
+\usepackage{multirow}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes} % handig voor commentaar: gebruik \todo{}, zie ftp://ftp.fu-berlin.de/tex/CTAN/macros/latex/contrib/todonotes/todonotes.pdf
+\usepackage{listings}
+ 
+\usepackage{tcolorbox}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[showframe]{geometry}% http://ctan.org/pkg/geometry
+
+% Bibliography package
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{literature.bib}
+
+
+% when writing in Dutch
+%\usepackage[dutch]{babel}
+%\selectlanguage{dutch}
+
+
+% linenumbering  See https://texblog.org/2012/02/08/adding-line-numbers-to-documents/
+% \usepackage{lineno}
+% \linenumbers
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+\newcommand{\shorttitle}{Dynamic models for stock market behaviour} % Put your short title here
+\begin{document}
+
+%\input{titlepage}
+\input{TitlePages/Thesis-Title-Page-DS}  % or use another template
+
+\pagebreak
+
+%\todototoc
+%\listoftodos
+%\tableofcontents
+
+\pagebreak
+
+\twocolumn
+
+\begin{abstract}
+% [CHANGE] 
+% Thesis Design
+During the COVID-19 pandemic \cite{velavan2020covid} questions were raised on how to balance government measures ensuring population health and allowing economic development. At the start of the pandemic, Saudi-Arabia and Russia were in a pricing war over crude oil \cite{jacobs2020opec} which, along with speculation on the economic impact of COVID-19, led to a unprecedented negative crude oil price in the West Texas Intermediate (WTI) \cite{CORBET2020104978}. As the WTI serves as a benchmark for crude oil prices in North America, and a proxy for economic development \cite{kaufmann2011role}, it is an interesting candidate to use for price forecasting \cite{YU20082623}. The pandemic provides a unique perspective, as it introduces a new set of variables \cite{dong2020interactive, hale2020variation}, such as COVID-19 infections, deaths, vaccinations and government measures \footnote{Provided by the National Institute for Public Health and the Environment (in Dutch: Rijksinstituut voor Volksgezondheid en Milieu, RIVM), the Johns Hopkins University Coronavirus Resource Center (JHU) and the Oxford COVID-19 Government Response Tracker (OxCGRT).}, that might aid in predicting economic development \cite{chudik2020economic, baldwin2020economics, fernandes2020economic}. Related studies generally focus on macroeconomic development, such as gross domestic product (GDP), unemployment or inflation over years or decades, rather than short-term development over days, weeks or months. This study attempts to combine data from the COVID-19 pandemic, weather, stock pricing data and machine learning techniques to determine the relationship between these variables and their value towards more accurate price forecasting. As stock prices have high variance, extreme values might indicate local or global stock market crashes, an optimal model would be able to predict these crashes. If the model does not explain part of the variance with the added pandemic data, it can be concluded that it does not play a direct role in price development. To determine the outcome of our research question, we compare the value of our data between a baseline model, linear model and two state-of-the-art (SOTA) models, the random forest regressor (RFR) and auto-regressive integrated moving average (ARIMA) model. Studying the effects of the data between 2019 and 2021 we can not achieve a significant result supporting our hypothesis. Both SOTA models tend to perform better or similar with less features, indicating the data does not add value to the prediction of stock market values.
+% Thesis Design
+\end{abstract}
+
+%TC:ignore
+\keywords{COVID-19, dynamic processes, stock market index, multivariable analysis, time series forecasting}
+
+\maketitle
+
+\input{introduction}
+\input{related_work}
+\input{methodology}
+\input{evaluation}
+\input{conclusions}
+
+% your refs
+
+\printbibliography
+% \bibliographystyle{plain}
+% \bibliography{MyThesis}
+
+% \appendix
+
+% Remember to include annex:
+% - EDA and prework
+%   - Refer to annex when including partial results or when motivating choices in methodology
+
+\input{appendix}
+
+% Example
+% \includepdf[nup=2x3 , pages=-]{sargent-lecture_slides.pdf}
+ 
+\end{document}

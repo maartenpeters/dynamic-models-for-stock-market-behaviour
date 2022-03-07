@@ -1,0 +1,40 @@
+INFO:root:Running models started at 2021_12_27 14_23
+INFO:root:2021-12-27 14:23:34.781883: Loaded models: lr, sgd, rfr, arima, dummy
+INFO:root:2021-12-27 14:23:34.851886: Running main function, init with random state 0 for 5 n_samples.
+INFO:root:2021-12-27 14:23:34.853886: Starting run 0, model lr for response variables 'open' with dataframe size (26501, 73).
+INFO:root:2021-12-27 14:23:34.864903: Sampled stock 'TKWY.AS'.
+INFO:root:2021-12-27 14:23:34.868014: Sampled start and end dates; train start: 2020-12-14 00:00:00, train end: 2021-02-11 00:00:00, test start: 2021-02-12 00:00:00, test end: 2021-02-18 00:00:00
+INFO:root:2021-12-27 14:23:34.869880: Set explanatory variables to ''.
+INFO:root:2021-12-27 14:23:34.879503: Training and testing size set to: 'X_train: (60, 1), y_train: (60, 1), X_test: (7, 1), y_test: (7, 1), '.
+INFO:root:Running models started at 2021_12_27 14_24
+INFO:root:2021-12-27 14:24:12.247466: Loaded models: lr, sgd, rfr, arima, dummy
+INFO:root:2021-12-27 14:24:12.282803: Running main function, init with random state 0 for 5 n_samples.
+INFO:root:2021-12-27 14:24:12.286807: Starting run 0, model lr for response variables 'open' with dataframe size (26501, 73).
+INFO:root:2021-12-27 14:24:12.303689: Sampled stock 'TKWY.AS'.
+INFO:root:2021-12-27 14:24:12.308646: Sampled start and end dates; train start: 2020-12-14 00:00:00, train end: 2021-02-11 00:00:00, test start: 2021-02-12 00:00:00, test end: 2021-02-18 00:00:00
+INFO:root:2021-12-27 14:24:12.310260: Set explanatory variables to ''.
+INFO:root:2021-12-27 14:24:12.319504: Training and testing size set to: 'X_train: (60, 1), y_train: (60, 1), X_test: (7, 1), y_test: (7, 1), '.
+INFO:root:Running models started at 2021_12_27 14_24
+INFO:root:2021-12-27 14:24:30.745054: Loaded models: lr, sgd, rfr, arima, dummy
+INFO:root:2021-12-27 14:24:30.778081: Running main function, init with random state 0 for 5 n_samples.
+INFO:root:2021-12-27 14:24:30.781079: Starting run 0, model lr for response variables 'open' with dataframe size (26501, 73).
+INFO:root:2021-12-27 14:24:30.792070: Sampled stock 'TKWY.AS'.
+INFO:root:2021-12-27 14:24:30.796079: Sampled start and end dates; train start: 2020-12-14 00:00:00, train end: 2021-02-11 00:00:00, test start: 2021-02-12 00:00:00, test end: 2021-02-18 00:00:00
+INFO:root:2021-12-27 14:24:30.798078: Set explanatory variables to ''.
+INFO:root:2021-12-27 14:24:30.807392: Training and testing size set to: 'X_train: (60, 1), y_train: (60, 1), X_test: (7, 1), y_test: (7, 1), '.
+INFO:root:Running models started at 2021_12_27 14_25
+INFO:root:2021-12-27 14:25:42.610815: Loaded models: lr, sgd, rfr, arima, dummy
+INFO:root:2021-12-27 14:25:42.645813: Running main function, init with random state 0 for 5 n_samples.
+INFO:root:2021-12-27 14:25:42.647817: Starting run 0, model lr for response variables 'open' with dataframe size (26501, 73).
+INFO:root:2021-12-27 14:25:42.659818: Sampled stock 'TKWY.AS'.
+INFO:root:2021-12-27 14:25:42.664813: Sampled start and end dates; train start: 2020-12-14 00:00:00, train end: 2021-02-11 00:00:00, test start: 2021-02-12 00:00:00, test end: 2021-02-18 00:00:00
+INFO:root:2021-12-27 14:25:42.666823: Set explanatory variables to ''.
+INFO:root:2021-12-27 14:25:42.676806: Training and testing size set to: 'X_train: (60, 1), y_train: (60, 1), X_test: (7, 1), y_test: (7, 1), '.
+INFO:root:Running models started at 2021_12_27 14_25
+INFO:root:2021-12-27 14:25:56.567745: Loaded models: lr, sgd, rfr, arima, dummy
+INFO:root:2021-12-27 14:25:56.602197: Running main function, init with random state 0 for 5 n_samples.
+INFO:root:2021-12-27 14:25:56.605208: Starting run 0, model lr for response variables 'open' with dataframe size (26501, 73).
+INFO:root:2021-12-27 14:25:56.616832: Sampled stock 'TKWY.AS'.
+INFO:root:2021-12-27 14:25:56.621822: Sampled start and end dates; train start: 2020-12-14 00:00:00, train end: 2021-02-11 00:00:00, test start: 2021-02-12 00:00:00, test end: 2021-02-18 00:00:00
+INFO:root:2021-12-27 14:25:56.622811: Set explanatory variables to ''.
+INFO:root:2021-12-27 14:25:56.631821: Training and testing size set to: 'X_train: (60, 1), y_train: (60, 1), X_test: (7, 1), y_test: (7, 1), '.

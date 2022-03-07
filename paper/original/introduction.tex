@@ -1,0 +1,105 @@
+\section{Introduction}
+\label{sec:intro}
+% \begin{itemize}
+% \item Bevat je onderzoeksvraag (of vragen)
+% \item Plaatst je vraag in de bestaande literatuur.
+% \end{itemize}
+% 
+% Je onderzoeksvraag is leidend voor je hele scriptie. Alles wat je doet moet % uiteindelijk terug te voeren zijn op 1 doel: het beantwoorden van die vraag. 
+% 
+% Typisch zal je het dan ook zo doen:
+% 
+% Mijn onderzoeksvraag is onderverdeeld in de volgende deelvragen:
+% 
+% \begin{description}
+% \item[RQ1] \ldots We   beantwoorden deze vraag  door het volgende te doen/ antwoord op % de volgende vragen te vinden/ \ldots
+% \begin{enumerate}
+% \item Vragen op dit niveau kan je echt beantwoorden, en dat doe je in je Evaluatie % sectie~\ref{sec:eva}.
+% \end{enumerate}
+% \item[RQ2] \ldots
+% \item[RQ3] \ldots
+% \end{description}
+% %
+% Je Evaluatie sectie~\ref{sec:eva} bevat evenveel subsecties als je deelvragen hebt. En % in elke sectie beantwoord je dan die deelvraag met behulp van de vragen op het % onderste niveau.
+% 
+% In je conclusies kan je dan je hoofdvraag gaan beantwoorden op basis van al het eerder % vergaarde bewijs.
+
+At the start and during the COVID-19 pandemic, rising infection rates, deaths and widespread lockdown measures raised questions on how to limit the pandemic's impact on economic development \cite{velavan2020covid}. This thesis looks into how the pandemic affects stock market values, as these are notoriously volatile in their pricing and influenced by a wide range of factors, demonstrated by the WTI value dipping in the negative at the first wave of infections \cite{CORBET2020104978}. 
+
+The relationship between stock markets and economic factors falls under the study of macroeconomics and finds it origins in the business cycle theory, dating back to the early 1800s \cite{de1827nouveaux}. This theory generally states that all economic development follows a cycle or waveform, going through the phases expansion, crisis, recession and recovery. These business cycles can be measured \cite{baxter1999measuring} and are part of the tools that a government can use to mitigate economic downturn. Predicting the development of a business cycle is generally based on economic indicators and economic theory, such as Keynesian theory  \cite{keynes2018general} and real-business cycle (RBC) theory \cite{kydland1982time}. One of the generally accepted economic indicators is the Standard and Poor's (S\&P) 500 as an indicator for the United States (US) economy, stating a relationship between economic development and the top 500 US companies \cite{diblasi_2021}.
+
+One of the complexities of these relationships, between a country and a national representation of the local stock market, is that a stock market is not a local phenomenon. Stocks and other financial products are traded internationally via a stock exchange and these stock indexes, such as the S\&P500, are a representation of the stock exchange itself and not (necessarily) of the country it resides in. As the COVID-19 pandemic's impact and government restrictions varies between countries, it is needed to isolate a region to perform a causal analysis of its impact on a stock market.
+
+As the WTI value dropped, all oil-related stocks dropped as a consequence, such as Royal Dutch Shell, one of the largest companies in the Netherlands. As previous research noted a relationship between pandemic data and economic development, and a relationship between economic development and stock indexes, the question can be posed whether these relationships aid in predictive modelling of stock values on a local level. This research will focus on the Netherlands, with the Amsterdam Exchange index (AEX) as an analog for the S\&P500, the former featuring the top 25 most traded securities on the Amsterdam Exchange. As macroeconomics looks at the large scale development of an economy, the models generally apply to years or decades of data. Day to day stock market development is a lot more volatile than other economic indicators, generally displaying a non-linear patterns. 
+
+This is where machine learning can aid in prediction, as these can capture non-linear behaviour better than traditional linear models \cite{zhang2009stock}. Still, stock market prediction is non-trivial as the efficient market hypothesis (EMH) \cite{peters1996chaos} states that no investor can gain an advantage over others based on historical and current information. Some investors base their decisions on fundamental analysis \cite{lev1993fundamental} to gain an advantage on others. Machine learning has shown to be effective at improving prediction accuracy on stock market securities or crude oil pricing \cite{jain1996, YU20082623, zhang2009stock, thawornwong2004forecasting}, especially using recurrent- (RNN) or artificial neural networks (ANN).
+
+Having established that there is a relationship between stock market values and economic development, the question remains whether the COVID-19 pandemic actually influenced stock market values. Social and economic factors have historically shown to be a important part of stock market crashes, such as with the Tulip Mania \cite{garber1989}, the Wall Street Crash of 1929 and the Great Depression \cite{white1990, kindleberger1986world} and the global financial crisis of 2008 \cite{crotty2009}. An important question during the recent pandemic was whether it would influence the economy and what its impact would be. Historically pandemics have shown their effects \cite{osterholm2017preparing, correia1918pandemics, jorda2020longer}, but the quantitative relationship between the COVID-19 pandemic and economic development is still an object of research \cite{chudik2020economic, baldwin2020economics, fernandes2020economic, deb2020economic}. During the COVID-19 pandemic daily data was registered on its development, such as infection rates, deaths, vaccinations and government restrictions \cite{dong2020interactive, hale2020variation}. As stock market crashes generally are a social phenomenon, this research investigates the relationship between these features and stock market pricing. The following research questions are posed:
+
+% At the start of the pandemic one of the first and unprecedented effects was the dip in the West Texas Intermediate (WTI), a benchmark for crude oil prices. Futures were valued into the negative, meaning distributors of crude oil were essentially paying to deliver oil to accepting customers instead of being paid for the commodity. The pandemic was not the only factor, as Russia and Saudi-Arabia were in a price war for oil, ramping up production and consequently starting a stock market crash due to the big supply and demand gap.
+
+% Along with rising infection rates and wide-spread 'lockdown' measures, the question became how to limit impact of the disease on economic development. In this paper we will look into how the pandemic affects stock market values, as these are notoriously volatile in their pricing and influenced by a wide range of factors, as the WTI demonstrated.
+
+\begin{itemize}
+    \item[RQ1] \ldots To what extent does the COVID-19 pandemic data influence stock market values?
+        \begin{itemize}
+            \item What is the baseline performance for standard statistical models on short term and long term?
+            \item How do different statistical and machine learning models compare given the same data?
+            \item How do models generalize to different time-periods, such as distinctions between different infection waves?
+            \item Which variables in a pandemic affect stock market pricing and to what extent? Variables such as ...
+            \begin{itemize}
+                \item COVID-19 pandemic data incl. 
+                \begin{itemize}
+                    \item Infections (provided by the RIVM and JHU)
+                    \item Deaths (provided by the RIVM and JHU)
+                    \item Vaccinations (provided by the JHU)
+                    \item Government restrictions, such as lockdown measures (provided by the OxCGRT)
+                \end{itemize}
+                \item Environmental factors such as calendar data or weather
+            \end{itemize}
+        \end{itemize}
+    \item[RQ2] \ldots To what extent can machine learning techniques aid in predicting stock market pricing, given a comparison of baseline models and the addition of pandemic data?
+\end{itemize}
+
+As the pandemic influenced a wide array of human behaviours, variables are restricted to the ones mentioned above. Other variables, such as mobility, energy consumption and social contacts have shown large differences during the pandemic, but are outside of the scope of this research.
+
+\paragraph{Overview of thesis}
+% Hier geef je even kort weer wat in elke sectie staat.
+
+To create context and support of the hypothesis, this paper first discusses related work \ref{sec:rel}. With this context, a proper methodology \ref{sec:meth} is formulated with an explanation on the data collection \ref{sec:data}, model development \ref{sec:models} and how these answer the proposed research questions \ref{sec:eval}. Using the methodology and proper context from related work, results can be analysed \ref{sec:res}, discussed \ref{sec:dis} and be made to construct a conclusion \ref{sec:conc}.
+
+
+% Related work
+% Deze sectie bestaat uit een aantal "blokken", waarin je per blok de relevante literatuur beschrijft. 
+
+% Neem alleen literatuur op die van belang is voor jouw onderzoeksvraag en deelvragen.
+
+% Typisch heb je 1 blok voor je hoofdvraag en per deelvraag \textbf{RQi} een blok. 
+
+% Methodology
+
+% Data verzameling en beschrijving van de data
+
+% Hoe is de data verzameld, en hoe heb jij die data verkregen?
+
+% Wat staat er in de data? Niet alleen maar een technisch verhaal, maar ook inhoudelijk. DE lezer moet een goed idee krijgen over de technische inhoud en wat het betekent.
+
+% Hoe je je vraag gaat beantwoorden.
+
+% Dit is de langste sectie van je scriptie. 
+
+% Als iets erg technisch wordt kan je een deel naar de Appendix verplaatsen. 
+
+% Probeer er een lopend verhaal van te maken.
+
+% Het is heel handig dit ook weer op te delen nav je deelvragen:
+
+% Evaluation
+
+% Met een subsectie voor elke deelvraag.
+
+% In hoeverre is je vraag beantwoord?
+
+% Een mooie graphic/visualisatie is hier heel gewenst.
+
+% Hou het kort maar krachtig.

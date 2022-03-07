@@ -1,0 +1,10 @@
+INFO:root:Running models started at 2021_12_04 14_18
+INFO:root:2021-12-04 14:18:37.615507: Loaded models: lr, sgd, rfr, arima, dummy
+INFO:root:2021-12-04 14:18:37.950789: Running main function, init with random state 0 for 5 n_samples.
+INFO:root:2021-12-04 14:18:37.960786: Starting run 0, model lr for response variables 'open' with dataframe size (26501, 73).
+INFO:root:2021-12-04 14:18:37.985945: Sampled stock 'REN.AS'.
+INFO:root:2021-12-04 14:18:37.994376: Sampled start and end dates; train start: 2020-05-11 00:00:00, train end: 2020-09-27 00:00:00, test start: 2020-09-28 00:00:00, test end: 2020-10-12 00:00:00
+INFO:root:2021-12-04 14:18:38.024604: Aggregated data to size '(152, 59)'.
+INFO:root:2021-12-04 14:18:38.050587: Set explanatory variables to '24h_average_air_pressure_converted_to_sea_level, 24h_average_cloud_cover, 24h_average_relative_humidity, 24h_average_temperature, 24h_average_wind_speed, 24h_sum_of_precipitation, daily_doses, deceased, full_vaccinations, infected, partial_vaccinations, stringency_actual, total_doses'.
+INFO:root:2021-12-04 14:18:38.100576: Training and testing size set to: 'X_train: (20, 27), y_train: (20, 1), X_test: (3, 27), y_test: (3, 1), '.
+INFO:root:2021-12-04 14:18:41.828596: Fitted model 'lr'

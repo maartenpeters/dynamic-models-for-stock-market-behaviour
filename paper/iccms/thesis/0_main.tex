@@ -1,0 +1,248 @@
+%%
+%% This is file `sample-sigconf.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `sigconf')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[manuscript,screen]{acmart}
+%% NOTE that a single column version may be required for 
+%% submission and peer review. This can be done by changing
+%% the \doucmentclass[...]{acmart} in this template to 
+%% \documentclass[manuscript,screen]{acmart}
+%% 
+%% To ensure 100% compatibility, please check the white list of
+%% approved LaTeX packages to be used with the Master Article Template at
+%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
+%% before creating your document. The white list page provides 
+%% information on how to submit additional LaTeX packages for 
+%% review and adoption.
+%% Fonts used in the template cannot be substituted; margin 
+%% adjustments are not allowed.
+%%
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% CUSTOM PACKAGES
+\usepackage{multirow}
+\usepackage{subcaption}
+
+%% CUSTOM CODE
+\usepackage[compact]{titlesec}         % you need this package
+\titlespacing{\section}{0pt}{0pt}{0pt} % this reduces space between (sub)sections to 0pt, for example
+\AtBeginDocument{%                     % this will reduce spaces between parts (above and below) of texts within a (sub)section to 0pt, for example - like between an 'eqnarray' and text
+  \setlength\abovedisplayskip{0pt}
+  \setlength\belowdisplayskip{0pt}}
+
+\usepackage[rawfloats=true]{floatrow} 
+\restylefloat{figure}     % this, I think, will reduce spaces between images and text.  
+
+% \vspace{-3mm}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmcopyright}
+\copyrightyear{2022}
+\acmYear{2022}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[ICCMS '22]{}{June 24--26, 2022}{Chongqing, China}
+%
+%  Uncomment \acmBooktitle if th title of the proceedings is different
+%  from ``Proceedings of ...''!
+%
+\acmBooktitle{Chongqing '22: 4th International Conference on Computer Modeling and Simulation, June 24--26, 2022, Chongqing, China} 
+% \acmPrice{15.00}
+% \acmISBN{978-1-4503-XXXX-X/22/06}
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Dynamic models for analysing stock market behaviour under the COVID-19 pandemic}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Maarten Peters}
+% \authornote{Main author}
+\email{maarten.peters@gmail.com}
+\affiliation{%
+  \institution{University of Amsterdam}
+  \streetaddress{Science Park 904}
+  \city{Amsterdam}
+  % \state{Ohio}
+  \country{the Netherlands}
+  \postcode{1098 XH}
+}
+
+\author{Dr. Cristian Rodriguez Rivero}
+\authornote{Internal Supervisor from the University of Amsterdam as part of the master thesis programme}
+\email{c.m.rodriguezrivero@uva.nl}
+\affiliation{%
+  \institution{University of Amsterdam, FNWI, IvI}
+  \streetaddress{Science Park 904}
+  \city{Amsterdam}
+  % \state{Ohio}
+  \country{the Netherlands}
+  \postcode{1098 XH}
+}
+
+\author{Dr. Julián Antonio Pucheta}
+\authornote{External Supervisor from the National University of Córdoba}
+\email{jpucheta@unc.edu.ar}
+\affiliation{%
+  \institution{Universidad Nacional de Córdoba}
+  \streetaddress{Av. Haya de la Torre}
+  \city{Córdoba}
+  % \state{Ohio}
+  \country{Argentina}
+  \postcode{HR77+RQ}
+}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Maarten Peters, et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+During the COVID-19 pandemic \cite{velavan2020covid} questions were raised on how to balance government measures ensuring population health and allowing economic development. At the start of the pandemic, Saudi-Arabia and Russia were in a pricing war over crude oil \cite{jacobs2020opec} which, along with speculation on the economic impact of COVID-19, led to a unprecedented negative crude oil price in the West Texas Intermediate (WTI) \cite{CORBET2020104978}. As the WTI serves as a benchmark for crude oil prices in North America, and a proxy for economic development \cite{kaufmann2011role}, it is an interesting candidate to use for price forecasting \cite{YU20082623}. The pandemic provides a unique perspective, as it introduces a new set of variables \cite{dong2020interactive, hale2020variation}, such as infections, deaths, vaccinations and government measures \footnote{Provided by the National Institute for Public Health and the Environment (in Dutch: Rijksinstituut voor Volksgezondheid en Milieu, RIVM), the Johns Hopkins University Coronavirus Resource Center (JHU) and the Oxford COVID-19 Government Response Tracker (OxCGRT).}, that might aid in predicting economic development \cite{chudik2020economic, baldwin2020economics, fernandes2020economic}. Related studies generally focus on macroeconomic development, such as gross domestic product (GDP), unemployment or inflation over years or decades, rather than short-term development over days, weeks or months. This study attempts to combine data from the COVID-19 pandemic, weather, stock pricing data and machine learning techniques to determine the relationship between these variables and their value towards more accurate price forecasting. As stock prices have high variance, extreme values might indicate local or global stock market crashes, an optimal model would be able to predict these crashes. To determine the outcome of our research question, we compare the value of our data between a baseline model, linear model and two state-of-the-art (SOTA) models, the random forest regressor (RFR) and auto-regressive integrated moving average (ARIMA) model. Both SOTA models tend to perform better or similar with less features, indicating the data does not add significant value to the prediction of stock market values.
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+%%\begin{CCSXML}
+%%<ccs2012>
+ %%<concept>
+%%  <concept_id>10010520.10010553.10010562</concept_id>
+%%  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+%%  <concept_significance>500</concept_significance>
+ %%</concept>
+ %%<concept>
+%%  <concept_id>10010520.10010575.10010755</concept_id>
+%%  <concept_desc>Computer systems organization~Redundancy</concept_desc>
+%%  <concept_significance>300</concept_significance>
+ %%</concept>
+ %%<concept>
+%%  <concept_id>10010520.10010553.10010554</concept_id>
+%%  <concept_desc>Computer systems organization~Robotics</concept_desc>
+%%  <concept_significance>100</concept_significance>
+ %%</concept>
+ %%<concept>
+%%  <concept_id>10003033.10003083.10003095</concept_id>
+%%  <concept_desc>Networks~Network reliability</concept_desc>
+%%  <concept_significance>100</concept_significance>
+ %%</concept>
+%%</ccs2012>
+%%\end{CCSXML}
+%%
+%%\ccsdesc[500]{Computer systems organization~Embedded systems}
+%%\ccsdesc[300]{Computer systems organization~Redundancy}
+%%\ccsdesc{Computer systems organization~Robotics}
+%%\ccsdesc[100]{Networks~Network reliability}
+
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10010147.10010257.10010293.10010307</concept_id>
+       <concept_desc>Computing methodologies~Learning linear models</concept_desc>
+       <concept_significance>300</concept_significance>
+       </concept>
+ </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[300]{Computing methodologies~Learning linear models}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{COVID-19, dynamic processes, stock market index, multivariable analysis, time series forecasting}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+% \begin{teaserfigure}
+%   \includegraphics[width=\textwidth]{sampleteaser}
+%   \caption{Seattle Mariners at Spring Training, 2010.}
+%   \Description{Enjoying the baseball game from the third-base
+%   seats. Ichiro Suzuki preparing to bat.}
+%   \label{fig:teaser}
+% \end{teaserfigure}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\input{thesis/1_introduction}
+\input{thesis/2_related_work}
+\input{thesis/3_methodology}
+\input{thesis/4_evaluation}
+\input{thesis/5_conclusions}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{thesis/0_literature.bib}
+
+
+\end{document}
+\endinput
